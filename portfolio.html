@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link id="main_stylesheet" rel="stylesheet" type="text/css" href="style2.css"></link>
+	<link rel="icon" href="images/favicon-32x32.png" type="image/png">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+            <a class="navbar-brand" href="index.html">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="qualifications.html">Experience</a>
+                    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="service.html">Service</a>
+                    </li>
+					<!-- <li class="nav-item">
+                        <a class="nav-link" href="ai_corner.html">AI Corner</a>
+                    </li> -->
+                </ul>
+                <button type="button" class="btn btn-secondary btn-sm ms-auto" onclick="toggleTheme()">Toggle Theme</button>
+            </div>
+        </div>
+    </nav>
+	
+    <header>
+        <h1>Portfolio</h1>
+        <p style="text-align: center;">Code is not provided to protect against plagiarism. Please reach out to me for code samples.</p>
+    </header>
+
+    <div class="main_container container flex-grow-1">
+        <div class="main_content row">
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Autonomous Drone Parking Patrol</h2>
+                        <div class="content_block">
+                            <p>
+                                This project was my undergraduate capstone project. My group and I developed a drone-based system
+                                to autonomously patrol parking lots and use license plate recognition technology to enforce parking
+                                permits. Our system used a DJI Mavic Pro running custom firmware, with a field-based Android device
+                                linking back to a central server. This system offered a fast, cost-effective, highly scalable solution
+                                to parking enforcement, especially on large scales such as a university campus.
+                                <!-- <a class="external_link" href="https://seth.engr.tamu.edu/research-2/">SeTH Lab website</a>. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="images/drone_project.png">
+                            <img class="portfo_img" src="images/drone_project.png" alt="Drone Parking Patrol">
+                            <p>Drone Parking Patrol</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Hardware Fuzzing</h2>
+                        <div class="content_block">
+                            <p>
+                                Hardware fuzzing is a recently developed technique for identifying vulnerabilities in hardware designs. 
+                                Since March of 2023, I have had the opportunity to work on a hardware fuzzing project in the SeTH Lab at Texas A&M University.
+                                The basic concept of hardware fuzzing is to generate random inputs to a hardware design and observe the outputs. By doing this
+                                we can identify any misbehavior in the processor to find vulnerabilities. This is a very new field of research, and I am excited
+                                to be able to contribute. You can read more about our hardware fuzzer, TheHuzz, on the 
+                                <a class="external_link" href="https://seth.engr.tamu.edu/research-2/">SeTH Lab website</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="https://seth.engr.tamu.edu/research-2/">
+                            <img class="portfo_img" src="images/fuzz_framework.png" alt="Hardware Fuzzer Framework">
+                            <p>Hardware Fuzzer Framework</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Multi-threaded Web Crawler</h2>
+                        <div class="content_block">
+                            <p>
+                                Web crawlers are used to explore the internet and collect data. Using an object-oriented approach, I developed a 
+                                multi-threaded web crawler in C++ for scraping links from HTTP/1.0 websites. The crawler honored robots.txt files 
+                                and was proven to scale to over 5000 threads and explore millions of links. This project used extensive memory and 
+                                thread management to ensure that the crawler was efficient and scalable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="images/crawler.png">
+                            <img class="portfo_img" src="images/crawler.png" alt="Web Crawler Printout">
+                            <p>Web Crawler Output Statistics</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Full-stack Restaurant Inventory System</h2>
+                        <div class="content_block">
+                            <p class="indent">
+                                This was a group project used to explore software engineering princples. In the first phase of the project, we developed
+                                a desktop GUI application using Java. The application would be used as a complete restaurant system, allowing cashiers to 
+                                take customer orders and managers to view inventory data. Placing an order automatically updated inventory levels, which
+                                were stored in a SQL database, and managers could view sales data and inventory analytics, such as popular items. managers
+                                could also update inventory levels and add new items to the menu. 
+                            </p>
+                            <p>
+                                In the second phase of the project, we developed a web-based version of the application using Python Flask and JavaScript. 
+                                The web application expanded on the functionality by including a customer interface for placing orders online, as well 
+                                as a real-time order status display for kitchen staff. The web application was developed using the Agile methodology and 
+                                was hosted on a cloud server. This was an excellent exercise in teamwork, software engineering princples, and full-stack,
+                                end-to-end development.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="images/pos.png">
+                            <img class="portfo_img" src="images/pos.png" alt="POS System User Interface">
+                            <p>POS System User Interface</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Custom Linux Peripheral</h2>
+                        <div class="content_block">
+                            <p>
+                                In this solo project, I created a hardware peripheral for a linux system and then developed a driver to interface with the
+                                peripheral. The peripheral was a simple multiplier designed in Verilog. The driver was written in C and interfaced with the
+                                peripheral using memory-mapped I/O. The driver was able to send data to the peripheral, receive the result, and then display
+                                the result to the user. I designed and tested the system on a Xilinx Zynq FPGA. This project was a great exercise in 
+                                hardware-software interfacing and low-level programming. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="images/peripheral.jpg">
+                            <img class="portfo_img" src="images/peripheral.jpg" alt="Peripheral Test Output">
+                            <p>Output of Peripheral Testing</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Reliable Network Protocol</h2>
+                        <div class="content_block">
+                            <p>
+                                I created a reliable network protocol in C++ as an exercise in networking and distributed systems. The  protocol was modeled 
+                                after TCP and included features such as connection establishment, pipelined data transfer, and fast retransmissions. The protocol
+                                was designed to be reliable and efficient, and it was tested in a simulated network environment. This project was a great
+                                exercise in networking and distributed systems.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="images/network.png">
+                            <img class="portfo_img" src="images/network.png" alt="Network Transfer Trace">
+                            <p>Output of Network Transfer</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Classic Mustang Restoration</h2>
+                        <div class="content_block">
+                            <p>
+                                My dad and I have restored a 1970 Ford Mustang. Beginning with a rolling shell, the car has been entirely rebuilt to near 
+                                original condition. Entirely rust-proofed and repainted, the car has a new interior and a 4-speed manual transmission. The
+                                only non-original components are an amplified bluetooth stereo system and 1990 5.0 roller engine with a 4-barrel carburetor,
+                                which we rebuilt ourselves for upgraded reliability and performance. The car has become my daily driver and has fueld my passion
+                                for old cars and hands-on work.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="images/mustang.png">
+                            <img class="portfo_img" src="images/mustang.png" alt="1970 Ford Mustang">
+                            <p>1970 Ford Mustang</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Digital Tachometer</h2>
+                        <div class="content_block">
+                            <p>
+                                This was a fun project that combined my love of cars with my passion for engineering. Using an Arduino Nano and a handful of 
+                                hobbyist electronics, I built a digital tachometer for my car. The tachometer is a device that measures the RPM of the engine.
+                                By wiring the ignition coil through a <a class="external_link" href="https://europe1.discourse-cdn.com/arduino/original/4X/2/0/c/20c65bb1880715cd9be32c842d151c8ff1a2652c.png">filter</a>
+                                to the Arduino, I was able to measure the frequency of the ignition pulses and calculate the RPM. I then used a 7-segment 
+                                display to display the RPM on the windshield as a heads-up display, as well as a strip of colored LEDs. This was an extremely 
+                                fun project that allowed me to apply my engineering skills. Ultimately, my tachometer proved to be too distracting and only 
+                                moderately accurate, but it was a fantastic project nonetheless.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="https://forum.arduino.cc/t/tachometer-from-ignition-coil/680264/15">
+                            <img class="portfo_img" src="images/tach_circuit.png" alt="Digital Tachometer Circuit Diagram">
+                            <p>Circuit Diagram</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>Home Automation</h2>
+                        <div class="content_block">
+                            <p>
+                                Almost everyone has some form of home automation nowadays, whether it's a smart thermostat, a wifi-controlled lightbulb, or an 
+                                Amazon Echo. I took this even further and built a home automation system from scratch. Using a Raspberry Pi and a platform
+                                called <a class="external_link" href="https://www.home-assistant.io/">"Home Assistant,"</a> I created a 
+                                <a class="external_link" href="https://www.z-wave.com/">Z-Wave</a> network to control my bedroom lights, my window blinds, and my 
+                                front door. The system has some awesome capabilities, like scheduling the blinds to open at sunrise, or turning on the lights 
+                                when I walk in the room. I learned a lot by building this system and had a great experience 
+                                interfacing software programming with real-world devices. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="https://www.home-assistant.io/">
+                            <img class="portfo_img" src="images/home_assistant.png" alt="The Home Assistant Logo">
+                            <p>Home Assistant Automation Platform</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-auto">
+		<div class="footer_item"></div>
+		<div class="footer_item">
+			<a class="external_link" href="https://www.linkedin.com/in/kyle-minihan-ba7a75251/">
+				<img class="footer_img" src="images/linkedin_logo.png" alt="LinkedIn">
+			</a>
+		</div>
+		<div class="footer_item">
+			<a class="unstyled_link" href="mailto:kylepminihan@gmail.com">
+				<p>kylepminihan@gmail.com</p>
+			</a>		
+		</div>
+		<div class="footer_item">
+			<a class="external_link" href="https://github.com/minmanrox">
+				<img class="footer_img" src="images/github_logo.png" alt="GitHub">
+			</a>
+		</div>
+		<div class="footer_item"></div>
+	</footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

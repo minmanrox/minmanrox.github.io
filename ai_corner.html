@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="main_stylesheet" rel="stylesheet" href="style.css">
+  <title>Generative AI Showcase</title>
+</head>
+<body>
+
+<header>
+  <button class="theme_toggle" onclick="toggleTheme()">Toggle Theme</button>
+</header>
+
+<div class="nav_bar">
+  <nav>
+    <a href="index.html" class="nav_button">Home</a>
+    <a href="portfolio.html" class="nav_button">Portfolio</a>
+    <a href="qualifications.html" class="nav_button">Qualifications</a>
+    <a href="service.html" class="nav_button">Service</a>
+    <a href="ai_corner.html" class="nav_button nav_button_current">AI Corner</a>
+  </nav>
+</div>
+
+<main>
+  <div class="content_block">
+    <h1 class="page_title">AI Corner</h1>
+    <p class="page_description">Explore the intersection of poetry, humor, and artificial intelligence in this corner dedicated to the creative side of technology.</p>
+  </div>
+
+  <div class="content_section">
+    <h2>Poetry</h2>
+    <div class="content_block">
+      <div class="poem_column">Poem 1: Roses are red, violets are blue, in binary, you're my 10/10.</div>
+      <div class="poem_column">Poem 2: Code runs, circuits hum, in the digital realm, our connection is strong.</div>
+      <div class="poem_column">Poem 3: A byte of love, a bit of passion, our hearts sync in algorithmic fashion.</div>
+      <div class="poem_column">Poem 4: Pixels dance in moonlight's glow, our love's syntax beautifully aglow.</div>
+      <div class="poem_column">Poem 5: Through the algorithm of life, our paths converged, binary stars in the digital night.</div>
+    </div>
+  </div>
+
+  <div class="content_section">
+    <h2>Jokes</h2>
+    <div class="content_block">
+      <div class="joke_column">Joke 1: Why do programmers prefer dark mode? Less light, fewer bugs!</div>
+      <div class="joke_column">Joke 2: Why did the AI cross the road? To optimize its path-finding algorithm.</div>
+      <div class="joke_column">Joke 3: How many programmers does it take to change a light bulb? None, that's a hardware issue!</div>
+      <div class="joke_column">Joke 4: What's a computer's favorite snack? Microchips!</div>
+      <div class="joke_column">Joke 5: Why did the computer go to therapy? It had too many bytes of emotional baggage.</div>
+      <div class="joke_column">Joke 6: What did one computer say to the other? "0101010101010101"</div>
+    </div>
+  </div>
+
+  <div class="content_section">
+    <h2>Pickup Lines</h2>
+    <div class="content_block">
+      <div class="pickup_line_column">Line 1: Are you a computer? Because you've got my heart in a loop.</div>
+      <div class="pickup_line_column">Line 2: Are you a Wi-Fi signal? Because I'm feeling a strong connection.</div>
+      <div class="pickup_line_column">Line 3: Is your name Google? Because you've got everything I've been searching for.</div>
+      <div class="pickup_line_column">Line 4: Are you a keyboard? Because you're my type.</div>
+      <div class="pickup_line_column">Line 5: Are you a software update? Because not seeing you is causing a system crash.</div>
+      <div class="pickup_line_column">Line 6: What did the algorithm say to the dataset? "You complete me."</div>
+      <div class="pickup_line_column">Line 7: Are you an API? Because I want to access your heart.</div>
+      <div class="pickup_line_column">Line 8: Can I follow you home? My GPS says we're a perfect match.</div>
+      <div class="pickup_line_column">Line 9: Is your name JavaScript? Because you make my heart race asynchronously.</div>
+    </div>
+  </div>
+
+  <div class="content_section">
+    <h2>Given Prompts</h2>
+    <div class="content_block">
+      <p>1. generate an html webpage that showcases the abilities of generative ai. Across the top of the webpage should be links to the five pages of the website: index.html, portfolio.html, qualifications.html, service.html, and ai_corner.html. Each should be the class "nav_button", and the ai_corner.html should also have class nav_button_current. For the main content of the page, start with an h1 header stating "AI Corner". Centered beneath that in bold font, describe the purpose of the page in three sentences. For the main content of the page, make three &lt;div> blocks with the class "content_section". The first block should have a subheading of "Poetry" and should contain three poems, each in a separate column with width of 25%. You should write the poems and they should be related to computer science and AI. The second block, "Jokes" should show six cs-related or ai-related jokes, separated into three columns with width of 25%. You should write all of the jokes for me. The third block, "Pickup Lines" should show nine cs-related or ai-related pickup lines, separated into three columns with width of 25%. You should write all of the pickup lines for me. The webpage should use the stylesheet style.css, and the only classes you should define are for the jokes, poetry, and pickup lines. the color scheme should use a black background, with white text and light blue accenting.</p>
+      <p>2. i want each division to have an overall width of 90%. I also want you to generate all of the poetry, jokes, and pickup lines for me. At the very end of the page, include all of the prompts that I have given you</p>
+      <p>3. place the nav bar inside a div with class "nav_bar". also, in style.css, update the poetry, jokes, and pickup_lines classes to have a width of 90%</p>
+      <p>4. in the html, generate the three poems, six jokes, and nine pickup lines for me</p>
+      <p>5. at the bottom of the webpage, include all of the prompts that I have given you so far</p>
+      <p>6. give me the exact same html file as earlier, but add the script "script.js" at the end of the body</p>
+      <p>7. Give me the same file, but add the id "main_stylesheet" to the link element. Also, add a header before main with a button, with class "theme_toggle" and the onclick function "toggleTheme()"</p>
+      <p>8. give me the same file, but after each header, the subsection should be placed in a div with class "content_block".</p>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

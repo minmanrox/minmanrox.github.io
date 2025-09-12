@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kyle Minihan</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link id="main_stylesheet" rel="stylesheet" type="text/css" href="style2.css"></link>
+	<link rel="icon" href="images/favicon-32x32.png" type="image/png">
+</head>
+<body class="d-flex flex-column min-vh-100">
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="qualifications.html">Experience</a>
+                    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="service.html">Service</a>
+                    </li>
+					<!-- <li class="nav-item">
+						<a class="nav-link" href="ai_corner.html">AI Corner</a>
+                    </li> -->
+                </ul>
+				<button type="button" class="btn btn-secondary btn-sm ms-auto" onclick="toggleTheme()">Toggle Theme</button>
+            </div>
+        </div>
+    </nav>
+	
+	<header>
+		<h1>Kyle Minihan</h1>
+	</header>
+
+	<main class="main_container container flex-grow-1">
+		<div class="main_content row justify-content-center">
+			<img class="cover_image" src="images/car_pic.jpg" alt="Picture of Kyle Minihan">
+			<div class="about_me"> Hi there! I'm Kyle Minihan, a Master's Student in Electrical & Computer Engineering student at Carnegie Mellon University. 
+					I specialize in software development, digital signal processing, and embedded systems.
+					I am currently seeking internship opportunities for Summer 2026.</div>
+			<h2 class="main_heading">My Story</h2>
+			<div class="content_block">
+				<!-- <p class="indent">
+					I grew up in Northern Virginia, where I witnessed and admired the hard work and advanced technology that goes into national 
+					security. This ignited a passion for security in me and set me on the path toward a career in service of my nation.
+				</p> -->
+				<p class="indent">
+					I earned a Bachelor's Degree in Computer Engineering from Texas A&M, where I received a top-notch education and gained valuable research experience. My coursework in computer engineering 
+					gave me a wide breadth of knowledge of computer systems, from top-level software development down to low-level hardware interactions.
+					<!-- My cybersecurity minor developed my skills in the fundamentals of cybersecurity.  -->
+					Working as an undergraduate researcher in the Secure and Trustworthy Hardware 
+					Lab, I gained valuable research experience while also learning the principles of security at the hardware level. My commitment
+					to academic success allowed me to maintain a 4.0 GPA while also participating in undergraduate research. My academic success has
+					initiated my path to the forefront of new technologies.
+					In my education at Carnegie Mellon University, I am focusing on computer architecture and signal processing. 
+				</p>
+				<p class="indent">
+					My experience in both academics and research has given me a diverse set of skills. Collaborative projects in both my coursework
+					and research have developed my soft skills including teamwork, communication, and project management. My research experience has
+					given me valuable problem-solving and critical-thinking skills. I have also developed many hard skills, including hardware simulation
+					and hardware fuzzing, software development, FPGA programming, and more.
+				</p>
+				<p class="indent">
+					In my internships, I have grown a wide range of technical skills, especially in signal processing and GPU development. I have conducted
+					industry work in image processing, GPU-based clustering algorithms, embedded system design, and more. My work experience has confirmed
+					that I have a passion for hands-on technical work at the cutting edge of technology. I have industry experience signal filtering and 
+					Extended Kalman Filters (EKFs), development in both Nvidia CUDA and Heterogeneous-computing Interface for Portability (HIP), and 
+					Nvidia Jetson-based embedded Linux devices.
+				</p>
+				<p class="indent">
+					My professional aspirations are guided by a desire to work at the leading edge of technology and to continually develop my expertise.
+					My strong education and diverse experience enable me to pursue new ideas and explore uncharted territories. In my career,
+					I aim to stretch the limits of what is possible by pushing myself to be the best I can be.
+				</p>
+				<p class="indent">
+					In my spare time, you might find me working out or tinkering with old cars. I recently completed my second triathlon, and I am currently training for an Ironman 70.3.
+					I also love working with my hands. I restored a 1970 Mustang with my dad, seen in the picture above. I have also earned my private pilot's license, and I try to fly
+					in my free time as much as possible.
+				</p>
+				<p class="indent">
+					On this website, you can learn more about me and the projects that I have worked on. I encourage you to take a look around, and please
+					feel free to contact me with any questions or opportunities. Thank you for visiting!
+				</p>
+			</div>
+		</div>
+	</main>
+	
+    <footer class="mt-auto">
+		<div class="footer_item"></div>
+		<div class="footer_item">
+			<a class="external_link" href="https://www.linkedin.com/in/kyle-minihan-ba7a75251/">
+				<img class="footer_img" src="images/linkedin_logo.png" alt="LinkedIn">
+			</a>
+		</div>
+		<div class="footer_item">
+			<a class="unstyled_link" href="mailto:kylepminihan@gmail.com">
+				<p>kylepminihan@gmail.com</p>
+			</a>
+		</div>
+		<div class="footer_item">
+			<a class="external_link" href="https://github.com/minmanrox">
+				<img class="footer_img" src="images/github_logo.png" alt="GitHub">
+			</a>
+		</div>
+		<div class="footer_item"></div>
+	</footer>
+	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
