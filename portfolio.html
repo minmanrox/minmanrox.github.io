@@ -41,11 +41,34 @@
 	
     <header>
         <h1>Portfolio</h1>
-        <p style="text-align: center;">Code is not provided to protect against plagiarism. Please reach out to me for code samples.</p>
+        <!-- <p style="text-align: center;">Code is not provided to protect against plagiarism. Please reach out to me for code samples.</p> -->
     </header>
 
     <div class="main_container container flex-grow-1">
         <div class="main_content row">
+            <div class="content_section pt-3">
+                <div class="flex_container">
+                    <div class="flex_item_a">
+                        <h2>FPGA Flight Controller</h2>
+                        <div class="content_block">
+                            <p>
+                                In this ongoing personal project, I am using a Zybo Z7-10 FPGA development board as the flight controller
+                                for a quadrotor drone. Built entirely from scratch, I implement all of the flight control logic on the
+                                FPGA fabric. The Z7-10 receives PWM input signals for each of the four flight controls (throttle, yaw,
+                                pitch, roll) and mixes them to create PWM output signals for each of the four motors. In the future,
+                                I aim to leverage the FPGA for more advanced functionality such as autonomous GPS-guided flight or onboard
+                                image processing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex_item_b">
+                        <a class="external_link" href="images/zybo_drone.png">
+                            <img class="portfo_img" src="images/zybo_drone.png" alt="FPGA-Controlled Drone (Bottom View)">
+                            <p>FPGA-Controlled Drone</p><p></p>(Bottom View)</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="content_section pt-3">
                 <div class="flex_container">
                     <div class="flex_item_a">
